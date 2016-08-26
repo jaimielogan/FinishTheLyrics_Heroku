@@ -1,2 +1,69 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!-- Nav Bar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Finish The Lyrics</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/play">Play<span class="sr-only">(current)</span></a></li>
+        <li><a href="/FeelingInspired">Inspired?</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Nav Bar -->
+
+<!-- Form -->
+<form class="lyrics" action="play.html" method="post">
+  <i class="fa fa-music" aria-hidden="true"></i>
+  <div class = "lyricsInput">
+    <!-- Lyrics will display here -->
+  </div>
+  <!-- User Input -->
+  <div class = "blanks">
+    <input type = "text" class = "word1" autofocus>
+    <input type = "text" class = "word2">
+    <input type = "text" class = "word3">
+  </div>
+
+  <!-- Submit Button -->
+  <div class="form-group">
+    <button class="btn btn-default submit" type="button">Submit</button>
+  </div>
+
+  <div class="result">
+    <!-- Correct/Incorrect will display here -->
+  </div>
+
+  <div class="optionButtons">
+    <a href="/home" class="btn btn-default quit">Quit</a>
+    <a class="btn btn-default continue">Continue</a>
+  </div>
+
+</form>
+    <!-- End of Form -->
+
+<!-- Completion Pop-Up -->
+<div class = "center">
+  <div class = "completion">
+    <h2 class = "score"></h2>
+    <h5 class = "question">Does this game you have feeling inspired?</h5>
+    <h6 class = "description">Select the 'Feeling Inspired?' button below to find karaoke bars near you!</h6>
+    <form class = "gameOver">
+      <div class="continueOptions">
+        <a href="/" class="btn btn-default quit">Quit</a>
+        <a href="/FeelingInspired" class="btn btn-default inspired">Feeling Inspired?</a>
+        <button class="btn btn-default nextLevel" type="button">Next Level</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- End of Completion Pop-Up -->
